@@ -12,23 +12,28 @@ import "./assets/stylesheets/index.css";
         about: buildAbout
     };
 
+    let activeBtn = document.querySelector(".nav-btn.active");
+
+    function setActiveButton(button) {
+        activeBtn?.classList.remove("active");
+        button.classList.add("active");
+        activeBtn = button;
+    }
+
     function capitalizeFirst(string) {
         return String(string).charAt(0).toUpperCase() + String(string).slice(1);
     }
-
-    let activeBtn = document.querySelector(".nav-btn.active");
 
     const navButtons = document.querySelectorAll(".nav-btn");
     navButtons.forEach(btn => {
         btn.addEventListener("click", e => {
 
-            activeBtn?.classList.remove("active");
-            btn.classList.add("active");
-            activeBtn = btn;
+            setActiveButton(btn);
             
             pageBuilders[btn.dataset.id]();
         });
     });
 
     buildHome();
+    setActiveButton(document.querySelector("#home-btn"));
 })();
