@@ -1,6 +1,9 @@
 import { createCustomElement, createImageElement } from "./helper.js";
 
+import "../assets/stylesheets/menu.css";
+
 import menuData from "../menuData.json";
+
 import blackBriarReserve from "../assets/images/black-briar-reserve.png";
 import bread from "../assets/images/bread.png";
 import grilledLeeks from "../assets/images/grilled-leeks.png";
