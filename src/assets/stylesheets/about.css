@@ -24,4 +24,5 @@
 .about .about-paragraph {
     width: clamp(28ch, 80%, 52ch);
     color: var(--color-text-muted);
+    line-height: 1.5em;
 }
