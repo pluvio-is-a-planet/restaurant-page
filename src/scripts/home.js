@@ -1,3 +1,5 @@
+import "../assets/stylesheets/home.css";
+
 import image from "../assets/images/hulda.jpg";
 import { createCustomElement, createImageElement } from "./helper.js";
 
