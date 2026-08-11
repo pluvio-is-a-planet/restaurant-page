@@ -1,0 +1,16 @@
+{
+    "drinks": [
+        { "id": "blackBriarReserve", "name": "Black-Briar Reserve", "alt": "A Bottle of Black-Briar Reserve", "desc": "A rich, oak-aged mead favored by Whiterun's warriors.", "price": 12 },
+        { "id": "honningbrewMead", "name": "Honningbrew Mead", "alt": "A Bottle of Honningbrew Mead", "desc": "Sweet and golden, brewed just outside Whiterun's walls.", "price": 8 },
+        { "id": "nordsAle", "name": "Nord's Ale", "alt": "A Bottle of Nord's Ale", "desc": "A hearty, no-frills ale brewed the old way.", "price": 6 },
+        { "id": "spicedWine", "name": "Evette San's Spiced Wine", "alt": "A Bottle of Spiced Wine", "desc": "Warmed wine steeped with cinnamon and clove.", "price": 9 }
+    ],
+    "food": [
+        { "id": "bread", "name": "bread", "alt": "A Loaf of Bread", "desc": "Baked fresh each morning, still warm enough to melt butter on contact.", "price": 2 },
+        { "id": "grilledLeeks", "name": "Grilled Leeks", "alt": "A Bundle of Grilled Leeks", "desc": "Simple fare, charred leeks, seasoned with little more than salt.", "price": 4 },
+        { "id": "horkerStew", "name": "Horker Stew", "alt": "A Bowl of Horker Stew", "desc": "A thick, hearty stew favored by sailors and dock workers, rich enough to stick to your ribs through a long winter.", "price": 9 },
+        { "id": "salmonSteak", "name": "Salmon Steak", "alt": "A Piece of Grilled Salmon Steak", "desc": "Pulled fresh from the White River and grilled over an open flame, simple and satisfying.", "price": 8 },
+        { "id": "venisonStew", "name": "Venison Stew", "alt": "A Bowl of Venison Stew", "desc": "Slow-cooked venison with root vegetables, a hunter's favorite after a long trek through the hills.", "price": 10 },
+        { "id": "sweetroll", "name": "Sweetroll", "alt": "A Frosted Sweetroll", "desc": "A soft, sweet pastry topped with a thin glaze, the kind worth guarding with your life.", "price": 3 }
+    ]
+}
