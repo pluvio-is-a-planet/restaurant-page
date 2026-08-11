@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #1c130d;
+    --color-bg-alt: #2b1d13;
+    --color-hearth: #c1440e;
+    --color-hearth-light: #e8722c;
+    --color-gold: #d4a24c;
+    --color-text: #f1e5c8;
+    --color-text-muted: #b8a88c;
+    --color-wood: #4a2f1e;
+    --color-wood-dark: #2f1c11;
+}
+
+body {
+    background: url(../images/bannered-mare-interior.jpg) center /
+        cover no-repeat fixed border-box border-box var(--color-bg);
+
+    text-align: center;
+    text-shadow: 4px 4px 4px var(--color-bg);
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+header {
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background-color: color-mix(in srgb, var(--color-wood-dark) 85%, transparent);
+    border-bottom: 4px solid color-mix(in srgb, var(--color-wood) 85%, transparent);
+}
+
+header .restaurant-name {
+    color: var(--color-gold);
+
+    font-size: 2.2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav .nav-list {
+    list-style: none;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.nav-list .nav-list-item {
+    background-color: color-mix(in srgb, var(--color-wood) 60%, transparent);
+
+    flex: auto;
+}
+
+.nav-list .nav-btn {
+    background-color: transparent;
+    color: var(--color-text);
+
+    padding: 16px;
+    border: none;
+
+    width: 100%;
+
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px var(--color-bg);
+
+    cursor: pointer;
+}
+
+.nav-list .nav-btn:focus {
+    outline: none;
+}
+
+.nav-list .nav-btn:hover,
+.nav-list .nav-btn:focus {
+    color: var(--color-gold);
+}
+
+.nav-list .nav-btn.active {
+    color: var(--color-hearth-light);
+    text-decoration: underline 2px solid var(--color-hearth-light);
+}
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 32px 0;
+
+    color: var(--color-text);
+
+    font-size: 1.4rem;
+}
+
+footer {
+    padding: 16px;
+
+    background-color: color-mix(in srgb, var(--color-wood-dark) 85%, transparent);
+    border-top: 4px solid color-mix(in srgb, var(--color-wood) 85%, transparent);
+    color: var(--color-text-muted);
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
