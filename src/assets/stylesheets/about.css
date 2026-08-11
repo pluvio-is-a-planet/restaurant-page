@@ -1,0 +1,24 @@
+.about {
+    background-color: color-mix(in srgb, var(--color-bg) 70%, transparent);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+    padding: 16px;
+    width: clamp(36ch, 80%, 60ch);
+}
+
+.about-heading {
+    width: auto;
+}
+
+.about .about-heading + .about-paragraph {
+    margin-top: 32px;
+}
+
+.about .about-paragraph {
+    width: clamp(28ch, 80%, 52ch);
+    color: var(--color-text-muted);
+}

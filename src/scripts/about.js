@@ -1,5 +1,7 @@
 import { createCustomElement, createImageElement } from "./helper.js";
 
+import "../assets/stylesheets/about.css";
+
 function buildAboutPage() {
     const content = document.querySelector("#content");
     content.replaceChildren();
