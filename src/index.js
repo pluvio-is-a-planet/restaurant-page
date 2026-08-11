@@ -3,7 +3,7 @@ import buildHome from "./scripts/home.js";
 import buildMenu from "./scripts/menu.js";
 import buildAbout from "./scripts/about.js";
 
-import "./assets/stylesheets/index.css";
+import "./assets/stylesheets/base.css";
 
 (() => {
     const pageBuilders = {
