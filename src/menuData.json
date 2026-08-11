@@ -6,7 +6,7 @@
         { "id": "spicedWine", "name": "Evette San's Spiced Wine", "alt": "A Bottle of Spiced Wine", "desc": "Warmed wine steeped with cinnamon and clove.", "price": 9 }
     ],
     "food": [
-        { "id": "bread", "name": "bread", "alt": "A Loaf of Bread", "desc": "Baked fresh each morning, still warm enough to melt butter on contact.", "price": 2 },
+        { "id": "bread", "name": "Bread", "alt": "A Loaf of Bread", "desc": "Baked fresh each morning, still warm enough to melt butter on contact.", "price": 2 },
         { "id": "grilledLeeks", "name": "Grilled Leeks", "alt": "A Bundle of Grilled Leeks", "desc": "Simple fare, charred leeks, seasoned with little more than salt.", "price": 4 },
         { "id": "horkerStew", "name": "Horker Stew", "alt": "A Bowl of Horker Stew", "desc": "A thick, hearty stew favored by sailors and dock workers, rich enough to stick to your ribs through a long winter.", "price": 9 },
         { "id": "salmonSteak", "name": "Salmon Steak", "alt": "A Piece of Grilled Salmon Steak", "desc": "Pulled fresh from the White River and grilled over an open flame, simple and satisfying.", "price": 8 },
