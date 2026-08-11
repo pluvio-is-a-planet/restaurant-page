@@ -12,6 +12,8 @@
 }
 
 .about-heading {
+    font-family: var(--font-heading);
+
     width: auto;
 }
 
