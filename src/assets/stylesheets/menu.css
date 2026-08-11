@@ -1,7 +1,7 @@
 .menu {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 400px);
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 1fr repeat(6, 400px);
     gap: 16px;
 
     background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
@@ -10,10 +10,19 @@
     padding: 16px;
 }
 
+.menu .menu-heading {
+    grid-column: span 2;
+    grid-row-start: 1;
+
+    font-family: var(--font-heading);
+
+    width: auto;
+}
+
 .menu .menu-list {
     display: grid;
     grid-column: span 1;
-    grid-row: 1 / -1;
+    grid-row: 2 / -1;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
 }

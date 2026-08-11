@@ -38,6 +38,10 @@ function createMenuPage() {
 
     const menu = createCustomElement("div", "menu", "");
 
+    menu.appendChild(
+        createCustomElement("h2", "menu-heading", "Offerings")
+    );
+
     const drinks = menuData.drinks.map(item => ({...item, src: imageMap[item.id]}));
     const food = menuData.food.map(item => ({...item, src: imageMap[item.id]}));
 
@@ -45,13 +49,15 @@ function createMenuPage() {
     const foodList = createCustomElement("div", "menu-list food-list", "");
 
     drinks.forEach(item => {
-        const container = createMenuItem("drink", item);
-        drinkList.appendChild(container);
+        drinkList.appendChild(
+            createMenuItem("drink", item)
+        );
     });
 
     food.forEach(item => {
-        const container = createMenuItem("food", item);
-        foodList.appendChild(container);
+        foodList.appendChild(
+            createMenuItem("food", item)
+        );
     });
 
     menu.append(drinkList, foodList);
