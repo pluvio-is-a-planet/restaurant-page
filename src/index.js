@@ -20,10 +20,6 @@ import "./assets/stylesheets/index.css";
         activeBtn = button;
     }
 
-    function capitalizeFirst(string) {
-        return String(string).charAt(0).toUpperCase() + String(string).slice(1);
-    }
-
     const navButtons = document.querySelectorAll(".nav-btn");
     navButtons.forEach(btn => {
         btn.addEventListener("click", e => {
