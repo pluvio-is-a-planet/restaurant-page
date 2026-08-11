@@ -23,7 +23,7 @@ function createMenuObject(src, alt, desc, price) {
 
 function createMenuItem(itemType, itemObject) {
     const container = createCustomElement("div", `menu-item-container ${itemType}-container`, "");
-    const title = createCustomElement("h3", `menu-item-name ${itemType}-name`, itemObject.name);
+    const title = createCustomElement("h4", `menu-item-name ${itemType}-name`, itemObject.name);
     const image = createImageElement(`menu-item-image ${itemType}-image`, itemObject.src, itemObject.alt);
     const description = createCustomElement("p", `menu-item-desc ${itemType}-desc`, itemObject.desc);
     const price = createCustomElement("p", `menu-item-price ${itemType}-price`, `${itemObject.price} Septims`);
@@ -47,6 +47,14 @@ function createMenuPage() {
 
     const drinkList = createCustomElement("div", "menu-list drinks-list", "");
     const foodList = createCustomElement("div", "menu-list food-list", "");
+
+    drinkList.appendChild(
+        createCustomElement("h3", "menu-list-title drinks-list-title", "To Drink")
+    );
+
+    foodList.appendChild(
+        createCustomElement("h3", "menu-list-title food-list-title", "To Eat")
+    );
 
     drinks.forEach(item => {
         drinkList.appendChild(

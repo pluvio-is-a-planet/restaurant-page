@@ -1,7 +1,6 @@
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 400px);
-    grid-template-rows: 1fr repeat(6, 400px);
     gap: 16px;
 
     background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
@@ -21,10 +20,15 @@
 
 .menu .menu-list {
     display: grid;
-    grid-column: span 1;
-    grid-row: 2 / -1;
     grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+    grid-template-rows: auto;
+    grid-auto-rows: 400px;
+    align-content: flex-start;
+    gap: 16px;
+}
+
+.menu-list .menu-list-title {
+    font-family: var(--font-heading);
 }
 
 .menu-item-container {
