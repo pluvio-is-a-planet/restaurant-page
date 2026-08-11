@@ -2,6 +2,8 @@
 
 A fictional restaurant page for The Bannered Mare, an inn inspired by the world of Skyrim. Built as a project for [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)'s Full Stack JavaScript course.
 
+![](./screenshots/home-page.png)
+
 The site is a single-page application with three views, Home, Menu, and About, rendered dynamically via JavaScript, with navigation handled entirely client-side.
 
 ## What I Learned
