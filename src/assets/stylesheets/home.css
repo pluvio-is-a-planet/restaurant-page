@@ -13,6 +13,7 @@
 }
 
 .home .intro {
+    max-width: 80%;
     font-size: 1.6rem;
     font-style: italic;
 }
@@ -25,5 +26,6 @@
 }
 
 .home .description {
-    width: 56ch;
+    width: clamp(28ch, 80vw, 58ch);
+    font-size: 1.2rem;
 }

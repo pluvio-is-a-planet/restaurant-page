@@ -8,7 +8,6 @@
     gap: 22px;
 
     padding: 16px;
-    width: clamp(36ch, 80%, 60ch);
 }
 
 .about-heading {
@@ -22,7 +21,7 @@
 }
 
 .about .about-paragraph {
-    width: clamp(28ch, 80%, 52ch);
+    width: clamp(24ch, 80vw, 52ch);
     color: var(--color-text-muted);
     line-height: 1.5em;
 }
